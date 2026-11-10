@@ -5,6 +5,13 @@ All notable changes to the FreeCAD Nesting Workbench will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 Releases are named by month and year (e.g. 9-26); the manifest version is year.month.patch (e.g. 2026.9.0).
 
+## [11-26] - 2026-11-10
+
+Version 2026.11.0.
+
+### Added
+- **Export 3MF Plates** command in the Nesting menu and toolbar. Exports each `Sheet_` as one arranged 3MF (or STL) plate for 3D printing, named after the project.
+
 ## [9-26] - 2026-09-25
 
 Version 2026.9.0.

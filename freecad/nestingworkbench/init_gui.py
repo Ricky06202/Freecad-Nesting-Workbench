@@ -37,6 +37,7 @@ class NestingWorkbench(FreeCADGui.Workbench):
         from freecad.nestingworkbench.commands import command_stack_sheets
         from freecad.nestingworkbench.commands import command_manual_nester
         from freecad.nestingworkbench.commands import command_export_sheets
+        from freecad.nestingworkbench.commands import command_export_plates
         from freecad.nestingworkbench.commands import command_create_cam_job
         from freecad.nestingworkbench.commands import command_create_silhouette
         from freecad.nestingworkbench.commands import command_about
@@ -46,6 +47,7 @@ class NestingWorkbench(FreeCADGui.Workbench):
             'Nesting_StackSheets',
             'Nesting_ManualNester',
             'Nesting_Export',
+            'Nesting_ExportPlates',
             'Nesting_CreateCAMJob',
             'Nesting_CreateSilhouette',
             'Separator',
@@ -56,6 +58,7 @@ class NestingWorkbench(FreeCADGui.Workbench):
             'Nesting_StackSheets',
             'Nesting_ManualNester',
             'Nesting_Export',
+            'Nesting_ExportPlates',
             'Nesting_CreateCAMJob',
             'Nesting_CreateSilhouette'
         ])

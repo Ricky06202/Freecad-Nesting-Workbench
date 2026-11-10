@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
   <name>Nesting</name>
-  <description>A workbench for 2D nesting of shapes, using no-fit-polygon (Minkowski sum) placement with a genetic algorithm optimizer. Includes a manual nester, sheet stacking, DXF export and CAM job creation.</description>
-  <version>2026.9.0</version>
-  <date>2026-09-25</date>
+  <description>A workbench for 2D nesting of shapes, using no-fit-polygon (Minkowski sum) placement with a genetic algorithm optimizer. Includes a manual nester, sheet stacking, DXF export, CAM job creation and a 3MF plate export for 3D printing.</description>
+  <version>2026.11.0</version>
+  <date>2026-11-10</date>
   <maintainer email="petersfinewoodcraft@gmail.com">Steve Peters</maintainer>
   <license file="LICENSE">LGPL-2.1-or-later</license>
   <license file="LICENSE-Assets">OFL-1.1</license>
-  <url type="repository" branch="main">https://github.com/StevePeters-US/Freecad-Nesting-Workbench</url>
-  <url type="readme">https://raw.githubusercontent.com/StevePeters-US/Freecad-Nesting-Workbench/main/README.md</url>
-  <url type="bugtracker">https://github.com/StevePeters-US/Freecad-Nesting-Workbench/issues</url>
+  <url type="repository" branch="main">https://github.com/Ricky06202/Freecad-Nesting-Workbench</url>
+  <url type="readme">https://raw.githubusercontent.com/Ricky06202/Freecad-Nesting-Workbench/main/README.md</url>
+  <url type="bugtracker">https://github.com/Ricky06202/Freecad-Nesting-Workbench/issues</url>
   <icon>Resources/icons/Nesting_Workbench.svg</icon>
 
   <content>
     <workbench>
       <name>Nesting</name>
       <classname>NestingWorkbench</classname>
-      <description>2D nesting of shapes onto sheets, with automatic and manual placement.</description>
-      <version>2026.9.0</version>
+      <description>2D nesting of shapes onto sheets, with automatic and manual placement. Includes 3MF plate export for 3D printing.</description>
+      <version>2026.11.0</version>
       <subdirectory>./</subdirectory>
       <icon>Resources/icons/Nesting_Workbench.svg</icon>
       <freecadmin>1.0.0</freecadmin>
