@@ -1,15 +1,12 @@
 # FreeCAD Nesting Workbench
 
-A FreeCAD workbench that nests 2D shapes, or flat 3D parts, onto material sheets. Placement uses No-Fit Polygons (Minkowski sums), and a genetic algorithm can optionally improve the result. Finished layouts can be exported to DXF or turned straight into a CAM job.
-
-[![Patreon](https://img.shields.io/badge/Support-Patreon-F96854?style=flat&logo=patreon)](https://www.patreon.com/cw/AttackPotato)
+A FreeCAD workbench that nests 2D shapes, or flat 3D parts, onto material sheets. Placement uses No-Fit Polygons (Minkowski sums), and a genetic algorithm can optionally improve the result. Finished layouts can be exported as arranged 3MF plates for 3D printing.
 
 See [CHANGELOG.md](CHANGELOG.md) for what's new in each release.
 
 ## Requirements
 
 *   FreeCAD 1.0 or later
-*   The **CAM** workbench, for **Create CAM Job** only
 
 ## Installation
 
@@ -31,7 +28,7 @@ To re-nest an existing layout, select its `Layout_*` group before you open the p
 
 #### Sheet Setup
 *   **Sheet Width / Height:** Size of the material sheet.
-*   **Sheet Thickness:** Thickness of the material, used for the 3D view and CAM.
+*   **Sheet Thickness:** Thickness of the material, used for the 3D view.
 *   **Part Spacing:** Minimum gap between nested parts.
 *   **Bounds Resolution:**
     *   **Curve:** How closely curved edges are approximated. Small angles (5–10°) give smoother curves but nest more slowly. Large angles (30°+) are faster but coarser.
@@ -73,17 +70,17 @@ Click **Run Nesting**. You can stop a run at any time with **Cancel Nesting**.
 ## Other tools
 
 *   **Stack/Unstack Sheets:** Toggles the selected layout's sheets between stacked at the origin and laid out side by side.
-*   **Export Sheets as DXF:** Exports each sheet of the selected layout to its own DXF file, in a folder you choose.
-*   **Create CAM Job:** Builds a CAM job from the selected layout, with parts, labels and sheet outlines organised for machining.
-*   **Create Silhouette:** Creates a 2D outline of a 3D part, for use in a CAM job.
-*   **Manual Nester:** (Experimental) Move and rotate parts in a nested layout by hand. Drag a part to move it; hold **Shift** to rotate it instead. **X** / **Y** lock the movement to one axis. **Esc** or a right-click cancels the current drag, and **Enter** confirms it. Three modes are available: push nearby parts out of the way, allow valid (non-overlapping) positions only, or auto-rotate to fit. **NOTE: This tool is still under construction. It may not work correctly, and future versions may change its behaviour or break layouts saved with it.**
-*   **About Nesting Workbench** (Nesting menu): Shows the installed version.
+*   **Export 3MF Plates:** Exports each `Sheet_` of the selected layout as one arranged 3MF plate for 3D printing, named after the project. STL and ZIP are optional.
 
 ## Known issues
 
 *   After a **Balanced** or **Thorough** run that stops early, leftover `Layout_GA_*` groups (discarded optimizer candidates) can stay in the document. Delete them, and make sure you select the final `Layout_*` group before you export or stack.
 
-Please report bugs on the [issue tracker](https://github.com/StevePeters-US/Freecad-Nesting-Workbench/issues).
+Please report bugs on the [issue tracker](https://github.com/Ricky06202/Freecad-Nesting-Workbench/issues).
+
+## Credits
+
+Based on the Nesting Workbench by Steve Peters.
 
 ## License
 

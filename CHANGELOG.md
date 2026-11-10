@@ -5,6 +5,13 @@ All notable changes to the FreeCAD Nesting Workbench will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 Releases are named by month and year (e.g. 9-26); the manifest version is year.month.patch (e.g. 2026.9.0).
 
+## [11-26.1] - 2026-11-10
+
+Version 2026.11.1.
+
+### Removed
+- Manual Nester, Export Sheets as DXF, Create CAM Job, Create Silhouette and About commands, along with their tool modules and icons. This fork now focuses on **Run Nesting**, **Stack/Unstack Sheets** and **Export 3MF Plates**.
+
 ## [11-26] - 2026-11-10
 
 Version 2026.11.0.

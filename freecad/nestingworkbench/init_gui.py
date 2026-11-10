@@ -35,32 +35,17 @@ class NestingWorkbench(FreeCADGui.Workbench):
         # in each file, making the commands available to FreeCAD.
         from freecad.nestingworkbench.commands import command_nest
         from freecad.nestingworkbench.commands import command_stack_sheets
-        from freecad.nestingworkbench.commands import command_manual_nester
-        from freecad.nestingworkbench.commands import command_export_sheets
         from freecad.nestingworkbench.commands import command_export_plates
-        from freecad.nestingworkbench.commands import command_create_cam_job
-        from freecad.nestingworkbench.commands import command_create_silhouette
-        from freecad.nestingworkbench.commands import command_about
         # Create Menu (Dropdown)
         self.appendMenu(["Nesting"], [
             'Nesting_Run',
             'Nesting_StackSheets',
-            'Nesting_ManualNester',
-            'Nesting_Export',
-            'Nesting_ExportPlates',
-            'Nesting_CreateCAMJob',
-            'Nesting_CreateSilhouette',
-            'Separator',
-            'Nesting_About'
+            'Nesting_ExportPlates'
         ])
         self.appendToolbar("Nesting", [
             'Nesting_Run',
             'Nesting_StackSheets',
-            'Nesting_ManualNester',
-            'Nesting_Export',
-            'Nesting_ExportPlates',
-            'Nesting_CreateCAMJob',
-            'Nesting_CreateSilhouette'
+            'Nesting_ExportPlates'
         ])
 
     def Activated(self):
