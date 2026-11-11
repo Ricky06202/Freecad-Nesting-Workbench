@@ -1,4 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" version="1.1">
-  <path fill="#eff1e6" d="M14 2h4v28h-4zM11 4h3v24h-3zM18 4h3v24h-3zM10 6h1v22h-1zM21 6h1v22h-1zM8 8h2v18h-2zM22 8h2v18h-2zM7 12h1v12h-1zM24 12h1v12h-1zM6 14h1v10h-1zM25 14h1v10h-1zM12 28h2v2h-2zM18 28h2v2h-2z"/>
-  <path fill="#000000" d="M12 0h8v2h-8zM10 2h4v2h-4zM18 2h4v2h-4zM8 4h3v2h-3zM21 4h3v2h-3zM6 6h4v2h-4zM22 6h4v2h-4zM6 8h2v4h-2zM24 8h2v4h-2zM4 10h2v16h-2zM26 10h2v16h-2zM6 12h1v2h-1zM25 12h1v2h-1zM6 24h2v4h-2zM24 24h2v4h-2zM8 26h2v4h-2zM22 26h2v4h-2zM10 28h2v2h-2zM20 28h2v2h-2zM12 30h8v2h-8z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" role="img" aria-label="Nesting - piezas ajustadas sobre una lámina">
+<defs>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#CBEFF9"/></linearGradient>
+ <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6DE4FA"/><stop offset="1" stop-color="#1CAACF"/></linearGradient>
+ <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5F90B2"/><stop offset="1" stop-color="#285C7F"/></linearGradient>
+</defs>
+<!-- Material sheet -->
+<rect x="4" y="5" width="40" height="38" rx="7" fill="url(#glass)" stroke="#19445F" stroke-width="2.5"/>
+<path d="M10 13H38M10 24H38M10 35H38" stroke="#8CCADA" stroke-width=".85" stroke-dasharray="2 3" opacity=".75"/>
+<!-- Tight-fitting irregular parts -->
+<path d="M10 11h12v7h-5v8h-7z" fill="url(#aqua)" stroke="#174B64" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M25 11h13v9h-7v5h-6z" fill="url(#indigo)" stroke="#174B64" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M10 29h10v-6h5v13H10z" fill="#78C8E4" stroke="#174B64" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M28 28h10v8H27v-5h1z" fill="#DDF8FF" stroke="#174B64" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M14 14h4M29 14h5" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="1.3" stroke-linecap="round"/>
 </svg>
